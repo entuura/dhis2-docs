@@ -2770,7 +2770,7 @@ http://server/api/26/constants/ID</screen></para>
       <section xml:id="webapi_data_values_import_requirement">
         <title>Data value requirements</title>
           <para>Data value import supports a set of value types. For each value type there is a special requirement.
-          The following table lists some special requirements or configurations for some value types:
+          The following table lists the edge cases for value types. For information about all other cases, see <xref linkend="webapi_csv_data_elements"/>.
               <table>
                   <title>Value type requirements</title>
                   <tgroup cols="3">

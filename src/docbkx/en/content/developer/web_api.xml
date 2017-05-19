@@ -2767,6 +2767,81 @@ http://server/api/26/constants/ID</screen></para>
         performance. For small import files, leaving it to false will be fast. For large import
         files which contain a large number of distint data elements and organisation units, setting
         it to true will be orders of magnitude faster.</para>
+      <section xml:id="webapi_data_values_import_requirement">
+        <title>Data value requirements</title>
+          <para>Data value import supports a set of value types. For each value type there is a special requirement.
+          The value types has to follow these requirements:
+              <table>
+                  <title>Value type requirements</title>
+                  <tgroup cols="3">
+                      <thead>
+                          <row>
+                              <entry>Value type</entry>
+                              <entry>Requirements</entry>
+                              <entry>Comment</entry>
+                          </row>
+                      </thead>
+                      TEXT( String.class, true ),
+                      LONG_TEXT( String.class, true ),
+                      LETTER( String.class, true ),
+                      PHONE_NUMBER( String.class, false ),
+                      EMAIL( String.class, false ),
+                      BOOLEAN( Boolean.class, true ),
+                      TRUE_ONLY( Boolean.class, true ),
+                      DATE( LocalDate.class, false ),
+                      DATETIME( LocalDateTime.class, false ),
+                      TIME( String.class, false ),
+                      NUMBER( Double.class, true ),
+                      UNIT_INTERVAL( Double.class, true ),
+                      PERCENTAGE( Double.class, true ),
+                      INTEGER( Integer.class, true ),
+                      INTEGER_POSITIVE( Integer.class, true ),
+                      INTEGER_NEGATIVE( Integer.class, true ),
+                      INTEGER_ZERO_OR_POSITIVE( Integer.class, true ),
+                      TRACKER_ASSOCIATE( TrackedEntityInstance.class, false ),
+                      USERNAME( String.class, false ),
+                      FILE_RESOURCE( String.class, false ),
+                      COORDINATE( Point.class, true ),
+                      ORGANISATION_UNIT( OrganisationUnit.class, false ),
+                      AGE( Date.class, false ),
+                      URL( String.class, false );
+                      <tbody>
+                          <row>
+                              <entry>TEXT</entry>
+                              <entry>String</entry>
+                              <entry></entry>
+                          </row>
+                          <row>
+                              <entry>LONG_TEXT</entry>
+                              <entry>String</entry>
+                              <entry>Used when the value text size is big.</entry>
+                          </row>
+                          <row>
+                              <entry>LETTER</entry>
+                              <entry>String</entry>
+                              <entry>Used when the value is one character, type letter.</entry>
+                          </row>
+                          <row>
+                              <entry>PHONE_NUMBER</entry>
+                              <entry>String</entry>
+                              <entry>Used when the value is a phone number</entry>
+                          </row>
+                          <row>
+                              <entry>EMAIL</entry>
+                              <entry>String</entry>
+                              <entry>Used when the value is an e-mail adress</entry>
+                          </row>
+                          <row>
+                              <entry>BOOLEAN</entry>
+                              <entry>true | false | 1 | 0 | t | f |</entry>
+                              <entry>Used when the value is a boolean, true or false value. The import service does
+                                not care if the input has upper or lower case intial.</entry>
+                          </row>
+                      </tbody>
+                  </tgroup>
+              </table>
+          </para>
+      </section>
       <section xml:id="webapi_data_values_identifier_schemes">
         <title>Identifier schemes</title>
         <para>Regarding the id schemes, by default the identifiers used in the XML messages uses the

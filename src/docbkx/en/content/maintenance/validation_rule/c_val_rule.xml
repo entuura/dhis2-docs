@@ -118,10 +118,7 @@
                         <row>
                             <entry>
                                 <para>The position of the sliding window is always<emphasis>
-                                        relevant to</emphasis> the period being compared. See also:
-                                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xlink:href="https://en.wikipedia.org/wiki/Data_stream">Data
-                                        stream</link>.</para>
+                                        relevant to</emphasis> the period being compared.</para>
                             </entry>
                             <entry>
                                 <para>Data is always positioned at the <emphasis>current level

@@ -67,8 +67,8 @@
                     <para>Click <emphasis role="bold">Left side</emphasis>.</para>
                 </listitem>
                 <listitem>
-                    <para>Select <emphasis role="bold">Sliding window</emphasis> if you want to
-                        select data relative to the period you are comparing. See also <link
+                    <para>Select <emphasis role="bold">Sliding window</emphasis> if you want to view
+                        data relative to the period you are comparing. See also <link
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             xlink:href="https://docs.dhis2.org/master/en/user/html/manage_validation_rule.html#about_validation_rule"
                             >About validation rules</link>.</para>
@@ -213,8 +213,8 @@
                     </informaltable>
                 </listitem>
                 <listitem>
-                    <para>Select <emphasis role="bold">Sliding window</emphasis> if you want to
-                        select data relative to the period you are comparing. See also <link
+                    <para>Select <emphasis role="bold">Sliding window</emphasis> if you want to view
+                        data relative to the period you are comparing. See also <link
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             xlink:href="https://docs.dhis2.org/master/en/user/html/manage_validation_rule.html#about_validation_rule"
                             >About validation rules</link>.</para>
